@@ -1,3 +1,5 @@
+@use '../util' as u;
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -6,3 +8,26 @@ a {
 .uppercase {
   text-transform: uppercase;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flex-header,
+.main-content__planet-info-h1 {
+  background-color: var(--background-color);
+  font-size: 2rem;
+  font-family: u.$font-antonio;
+  
+  &__nav {
+    background-color: var(--background-color);
+    font-family: u.$font-league-spartan;
+
+    &--ul-li-link {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
