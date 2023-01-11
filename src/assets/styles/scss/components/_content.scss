@@ -1,0 +1,40 @@
+.main {
+  padding: 0.5em 1em;
+  margin: auto;
+  max-width: 1200px;
+
+  &-content {
+    text-align: center;
+
+    &__planet-img {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+    }
+
+    &__planet-info-h1 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    &__planet-info-p {
+      line-height: 1.5;
+      letter-spacing: .5px;
+    }
+
+    &__planet-link {
+      color: var(--light-gray);
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 400;
+    }
+
+  }
+
+}
+
+.external-link-icon {
+  width: 15px;
+  margin-left: .45em;
+}
