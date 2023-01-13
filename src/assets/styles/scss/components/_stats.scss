@@ -1,0 +1,56 @@
+@use '../util' as u;
+
+.stats {
+  display: flex;
+  flex-direction: column;
+
+  &__container + &__container {
+    margin-top: 1em;
+  }
+  
+  &__container {
+    border: 2px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+   
+    &-h5,
+    &-p {
+      margin: 0;
+    }
+
+    &-h5 {
+      font-size: .9rem;
+      letter-spacing: 1px;
+    }
+
+    &-p {
+      font-family: u.$font-antonio;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+
+  /* Tablet and Desktop */
+  @media(min-width: 650px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__container {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+
+      &-h5 {
+        margin: .75em 0;
+      }
+    }
+
+    &__container + &__container {
+      margin-top: 0;
+      margin-left: 1em;
+    }
+  }
+
+}
