@@ -2,14 +2,19 @@
   border-bottom: 2px solid ;
 }
 
+/* 
+  header navigation styling taken from 
+  https://codepen.io/kevinpowell/pen/jxppmr
+*/
+
 .flex {
+  display: flex;
 
   &-jsp {
     justify-content: space-between;
   }
 
   &-header {
-
     display: flex;
     position: relative;
     width: 100%;
@@ -50,6 +55,7 @@
     }
 
     &__nav {
+      z-index: 2;
       position: absolute;
       text-align: left;
       left: 0;
@@ -159,4 +165,46 @@
   }
 }
 
+.btn-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.btn-header {
+  font-size: .9rem;
+  letter-spacing: 2px;
+  padding: 1.5em 1em;
+  position: relative;
+}
+
+.btn-header::after,
+.btn-header::after {
+  content: '';
+  display: block;
+  background-color: var(--purple);
+  height: 5px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 0);
+  transform-origin: top;
+  transition: transform 300ms ease-in-out;
+}
+
+.btn-header:focus,
+.btn-header:hover {
+  color: var(--text-color);
+}
+
+.btn-header:focus::after,
+.btn-header:hover::after {
+  transform: scale(1, 1);
+}
+
+/* Tablet */
+@media(min-width: 650px) {
+  .planet-info-btn-container {
+    display: none;
+  }
+}
