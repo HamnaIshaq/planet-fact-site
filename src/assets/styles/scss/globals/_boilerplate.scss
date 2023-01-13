@@ -31,3 +31,14 @@ ul {
   max-width: 1440px;
   width: 95%;
 }
+
+a {
+  cursor: pointer;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: var(--light-gray);
+  cursor: pointer;
+}
