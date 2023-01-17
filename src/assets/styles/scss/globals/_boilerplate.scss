@@ -16,6 +16,9 @@ body {
   padding: 0;
   height: 100%;
   background-color: var(--background-color);
+  background-image: url("src/assets/resources/space-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-color);
   font-family: u.$font-league-spartan;
 }
