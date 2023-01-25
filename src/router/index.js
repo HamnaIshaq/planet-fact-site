@@ -49,6 +49,10 @@ const routes = [
     name: "neptune",
     component: Neptune,
   },
+  {
+    path: "/",
+    redirect: { name: "earth" },
+  },
 ];
 
 const router = createRouter({
