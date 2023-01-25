@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      activePlanet: "earth",
+      activePlanet: "",
     };
   },
   methods: {
