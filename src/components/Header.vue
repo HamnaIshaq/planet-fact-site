@@ -3,7 +3,7 @@
     <div class="flex border-b">
       <header class="uppercase container flex-header flex-jsp">
         <router-link
-          to="/earth"
+          :to="{ name: 'earth' }"
           exact-active-class="no-active"
           class="flex-header--logo"
           >the planets</router-link
@@ -18,7 +18,7 @@
           <ul class="flex-header__nav--ul">
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/mercury"
+                :to="{ name: 'mercury' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('mercury')"
                 >mercury</router-link
@@ -26,7 +26,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/venus"
+                :to="{ name: 'venus' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('venus')"
                 >venus</router-link
@@ -34,7 +34,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/earth"
+                :to="{ name: 'earth' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('earth')"
                 >earth</router-link
@@ -42,7 +42,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/mars"
+                :to="{ name: 'mars' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('mars')"
                 >mars</router-link
@@ -50,7 +50,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/jupiter"
+                :to="{ name: 'jupiter' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('jupiter')"
                 >jupiter</router-link
@@ -58,7 +58,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/saturn"
+                :to="{ name: 'saturn' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('saturn')"
                 >saturn</router-link
@@ -66,7 +66,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/uranus"
+                :to="{ name: 'uranus' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('uranus')"
                 >uranus</router-link
@@ -74,7 +74,7 @@
             </li>
             <li class="flex-header__nav--ul-li">
               <router-link
-                to="/neptune"
+                :to="{ name: 'neptune' }"
                 class="flex-header__nav--ul-li-link"
                 @click.prevent="onChangeActivePlanet('neptune')"
                 >neptune</router-link
