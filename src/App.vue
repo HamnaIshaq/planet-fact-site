@@ -1,29 +1,30 @@
 <template>
-  <Header></Header>
+  <Header
+    :activePlanet="activePlanet"
+    :onChangeActivePlanet="onChangeActivePlanet"
+  ></Header>
   <main class="main">
-    <PlanetDetails :planetInfo="planetInfo"></PlanetDetails>
-    <PlanetStats :planetInfo="planetInfo"></PlanetStats>
+    <router-view></router-view>
   </main>
 </template>
 
 <script>
-  import data from "./data.json"
-  import Header from './components/Header.vue'
-  import PlanetDetails from './components/PlanetDetails.vue'
-  import PlanetStats from './components/PlanetStats.vue'
+import Header from "./components/Header.vue";
 
-  export default {
-    name: "App",
-    components: {
-      Header,
-      PlanetDetails,
-      PlanetStats
+export default {
+  name: "App",
+  components: {
+    Header,
+  },
+  data() {
+    return {
+      activePlanet: "earth",
+    };
+  },
+  methods: {
+    onChangeActivePlanet(planet) {
+      this.activePlanet = planet;
     },
-    data(){
-      return {
-        planetInfo: data[0],
-      }
-    },
-  }
-
+  },
+};
 </script>
