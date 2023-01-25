@@ -53,6 +53,11 @@ const routes = [
     path: "/",
     redirect: { name: "earth" },
   },
+  {
+    // catch all
+    path: "/:catchAll(.*)*",
+    redirect: { name: "earth" },
+  },
 ];
 
 const router = createRouter({
