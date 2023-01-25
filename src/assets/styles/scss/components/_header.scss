@@ -1,5 +1,5 @@
 .border-b {
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
 }
 
 /* 
@@ -43,7 +43,7 @@
 
     &__nav--toggle-label span::before,
     &__nav--toggle-label span::after {
-      content: '';
+      content: "";
       position: absolute;
     }
 
@@ -57,6 +57,7 @@
 
     &__nav {
       background: transparent;
+      background-color: var(--background-color);
       z-index: 2;
       position: absolute;
       text-align: left;
@@ -68,7 +69,6 @@
       transition: transform 500ms ease-in-out;
 
       &--ul {
-        
         &-li {
           margin-bottom: 1em;
           margin-left: 1em;
@@ -81,48 +81,55 @@
           &-link:hover {
             font-size: 1.2rem;
           }
-
-
         }
-
       }
     }
 
-    &__nav--toggle:checked ~ &__nav  {
+    &__nav--toggle:checked ~ &__nav {
       transform: scale(1, 1);
     }
-    &__nav--toggle:checked ~ &__nav &__nav--ul-li-link  {
+    &__nav--toggle:checked ~ &__nav &__nav--ul-li-link {
       opacity: 1;
       transition: opacity 250ms ease-in-out 250ms;
     }
 
     /* Tablet */
-    @media(min-width: 650px) {
-        flex-direction: column;
-        align-items: center;
+    @media (min-width: 650px) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0;
 
-        &__nav {
-          position: relative;
-          text-align: left;
-          transition: none;
-          transform: scale(1,1);
-          top: initial;
-          left: initial;
+      &__nav {
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1, 1);
+        top: initial;
+        left: initial;
 
-          &--ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &--ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0;
 
-            &-li {
-              margin: 0 auto;
+          &-li {
+            margin: 0 auto;
 
-              &-link {
-                opacity: 1;
-                position: relative;
-              }
+            &-link {
+              opacity: 1;
+              position: relative;
+              padding: 2em 0.35em;
+              display: inline-block;
+            }
 
-              &-link::before {
+            &-link:hover,
+            &-link--active {
+              background-color: var(--purple);
+            }
+
+            /*&-link::before {
                 content: '';
                 display: block;
                 height: 5px;
@@ -137,21 +144,19 @@
 
               &-link:hover::before {
                 transform: scale(1, 1);
-              }
-
-            }
+              }*/
           }
         }
+      }
 
-        &__nav--toggle-label {
-          display: none;     
-        }
-
+      &__nav--toggle-label {
+        display: none;
+      }
     }
 
     /* Desktop */
-    @media(min-width: 1000px) {
-      flex-direction: row;        
+    @media (min-width: 1000px) {
+      flex-direction: row;
 
       &--logo {
         min-width: fit-content;
@@ -160,10 +165,7 @@
       &__nav {
         max-width: 770px;
       }
-
-    
     }
-
   }
 }
 
@@ -173,7 +175,7 @@
 }
 
 .btn-header {
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   padding: 1.5em 1em;
   position: relative;
@@ -181,7 +183,7 @@
 
 .btn-header::after,
 .btn-header::after {
-  content: '';
+  content: "";
   display: block;
   background-color: var(--purple);
   height: 5px;
@@ -205,7 +207,7 @@
 }
 
 /* Tablet */
-@media(min-width: 650px) {
+@media (min-width: 650px) {
   .planet-info-btn-container {
     display: none;
   }
