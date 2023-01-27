@@ -1,8 +1,5 @@
 <template>
-  <Header
-    :activePlanet="activePlanet"
-    :onChangeActivePlanet="onChangeActivePlanet"
-  ></Header>
+  <Header></Header>
   <main class="main">
     <router-view></router-view>
   </main>
@@ -15,16 +12,6 @@ export default {
   name: "App",
   components: {
     Header,
-  },
-  data() {
-    return {
-      activePlanet: "",
-    };
-  },
-  methods: {
-    onChangeActivePlanet(planet) {
-      this.activePlanet = planet;
-    },
   },
 };
 </script>
