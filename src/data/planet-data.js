@@ -20,9 +20,9 @@ export const mercury = {
   radius: "2,439.7 KM",
   temperature: "430°c",
   assets: {
-    planet: "src/assets/resources/planet-mercury.svg",
-    structure: "src/assets/resources/planet-mercury-internal.svg",
-    geology: "src/assets/resources/geology-mercury.svg",
+    planet: new URL("../assets/resources/planet-mercury.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-mercury-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-mercury.svg", import.meta.url).href,
   },
 };
 
@@ -48,9 +48,9 @@ export const venus = {
   radius: "6,051.8 KM",
   temperature: "471°c",
   assets: {
-    planet: "src/assets/resources/planet-venus.svg",
-    structure: "src/assets/resources/planet-venus-internal.svg",
-    geology: "src/assets/resources/geology-venus.svg",
+    planet: new URL("../assets/resources/planet-venus.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-venus-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-venus.svg", import.meta.url).href,
   },
 };
 
@@ -76,9 +76,9 @@ export const earth = {
   radius: "6,371 km",
   temperature: "16°c",
   assets: {
-    planet: "src/assets/resources/planet-earth.svg",
-    structure: "src/assets/resources/planet-earth-internal.svg",
-    geology: "src/assets/resources/geology-earth.svg",
+    planet: new URL("../assets/resources/planet-earth.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-earth-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-earth.svg", import.meta.url).href,
   },
 };
 
@@ -104,9 +104,9 @@ export const mars = {
   radius: "3,389.5 KM",
   temperature: "-28°c",
   assets: {
-    planet: "src/assets/resources/planet-mars.svg",
-    structure: "src/assets/resources/planet-mars-internal.svg",
-    geology: "src/assets/resources/geology-mars.svg",
+    planet: new URL("../assets/resources/planet-mars.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-mars-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-mars.svg", import.meta.url).href,
   },
 };
 export const jupitor = {
@@ -132,9 +132,9 @@ export const jupitor = {
   radius: "69,911 KM",
   temperature: "-108°c",
   assets: {
-    planet: "src/assets/resources/planet-jupiter.svg",
-    structure: "src/assets/resources/planet-jupiter-internal.svg",
-    geology: "src/assets/resources/geology-jupiter.svg",
+    planet: new URL("../assets/resources/planet-jupiter.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-jupiter-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-jupiter.svg", import.meta.url).href,
   },
 };
 export const saturn = {
@@ -159,9 +159,9 @@ export const saturn = {
   radius: "58,232 KM",
   temperature: "-138°c",
   assets: {
-    planet: "src/assets/resources/planet-saturn.svg",
-    structure: "src/assets/resources/planet-saturn-internal.svg",
-    geology: "src/assets/resources/geology-saturn.svg",
+    planet: new URL("../assets/resources/planet-saturn.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-saturn-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-saturn.svg", import.meta.url).href,
   },
 };
 export const uranus = {
@@ -186,9 +186,9 @@ export const uranus = {
   radius: "25,362 KM",
   temperature: "-195°c",
   assets: {
-    planet: "src/assets/resources/planet-uranus.svg",
-    structure: "src/assets/resources/planet-uranus-internal.svg",
-    geology: "src/assets/resources/geology-uranus.svg",
+    planet: new URL("../assets/resources/planet-uranus.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-uranus-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-uranus.svg", import.meta.url).href,
   },
 };
 export const neptune = {
@@ -213,8 +213,8 @@ export const neptune = {
   radius: "24,622 KM",
   temperature: "-201°c",
   assets: {
-    planet: "src/assets/resources/planet-neptune.svg",
-    structure: "src/assets/resources/planet-neptune-internal.svg",
-    geology: "src/assets/resources/geology-neptune.svg",
+    planet: new URL("../assets/resources/planet-neptune.svg", import.meta.url).href,
+    structure: new URL("../assets/resources/planet-neptune-internal.svg", import.meta.url).href,
+    geology: new URL("../assets/resources/geology-neptune.svg", import.meta.url).href,
   },
 };
