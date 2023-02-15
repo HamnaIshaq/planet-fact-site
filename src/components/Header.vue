@@ -12,9 +12,11 @@
           type="checkbox"
           class="flex-header__nav--toggle"
           id="flex-header__nav--toggle"
+          :checked="isMenuOpen"
+          @click="onMenuClick"
         />
 
-        <nav class="flex-header__nav">
+        <nav class="flex-header__nav" @click="isMenuOpen = false">
           <ul class="flex-header__nav--ul">
             <li class="flex-header__nav--ul-li">
               <router-link
@@ -98,5 +100,15 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    onMenuClick() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
 };
 </script>
