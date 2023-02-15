@@ -1,4 +1,31 @@
 <template>
+  <div style="margin: 0 -1.3em">
+    <div class="planet-info-btn-container border-b">
+      <div class="container btn-container flex flex-jsp">
+        <button
+          type="button"
+          class="btn uppercase btn-header"
+          @click.prevent="onClickOverview"
+        >
+          overview
+        </button>
+        <button
+          type="button"
+          class="btn uppercase btn-header"
+          @click.prevent="onClickStructure"
+        >
+          structure
+        </button>
+        <button
+          type="button"
+          class="btn uppercase btn-header"
+          @click.prevent="onClickSurface"
+        >
+          surface
+        </button>
+      </div>
+    </div>
+  </div>
   <section class="main-content">
     <div class="main-content__planet-img-container">
       <img class="main-content__planet-img" :src="planetImg" alt="planet" />
@@ -22,7 +49,7 @@
             wikipedia
             <img
               class="external-link-icon"
-              src="../assets/resources/external-link.svg"
+              src="/resources/external-link.svg"
               alt="external link icon"
               aria-hidden="true"
             />
