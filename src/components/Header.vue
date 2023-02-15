@@ -85,15 +85,6 @@
         </label>
       </header>
     </div>
-    <div class="planet-info-btn-container border-b">
-      <div class="container btn-container flex flex-jsp">
-        <button type="button" class="btn uppercase btn-header">overview</button>
-        <button type="button" class="btn uppercase btn-header">
-          structure
-        </button>
-        <button type="button" class="btn uppercase btn-header">surface</button>
-      </div>
-    </div>
   </div>
 </template>
 
